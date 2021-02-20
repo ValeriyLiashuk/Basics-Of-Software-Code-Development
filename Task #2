@@ -1,0 +1,19 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Main obj=new Main(); //creating object which call function equal()
+        Scanner scanner=new Scanner(System.in); //creating scanner
+        double a,b,c; //creating variables
+        a=scanner.nextDouble(); //set at a value
+        b=scanner.nextDouble(); //set at a value
+        c=scanner.nextDouble(); //set at a value
+        System.out.println(obj.equal(a,b,c)); //output the result
+    }
+    public double equal(double num1,double num2,double num3){ //creating method that accept value and solve it
+        return ((num2+Math.sqrt(Math.pow(num2,2)+4*num1*num3)/(2*num1))-(Math.pow(num1,3)*num3)+(Math.pow(num2,-2))); //return result
+    }
+}
