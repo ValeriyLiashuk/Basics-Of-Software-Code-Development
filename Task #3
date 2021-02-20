@@ -1,0 +1,18 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Main obj=new Main(); //creating object which call function equal()
+        Scanner scanner=new Scanner(System.in); //creating scanner
+        double a,b; //creating variables
+        a=scanner.nextDouble(); //set at a value
+        b=scanner.nextDouble(); //set at a value
+        System.out.println(obj.equal(a,b)); //output the result
+    }
+    public double equal(double num1,double num2){ //creating method that accept value and solve it
+        return ((Math.sin(num1)+Math.cos(num2))/(Math.cos(num1)-Math.sin(num2))); //return result
+    }
+}
