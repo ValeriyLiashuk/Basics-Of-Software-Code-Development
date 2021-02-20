@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Main obj=new Main(); //creating object which call function()
+        Scanner scanner=new Scanner(System.in); //creating scanner
+        int grad1=scanner.nextInt(); //creating variables
+        int grad2=scanner.nextInt(); //creating variables
+        obj.function(grad1,grad2); //calling the function()
+    }
+    public void function(int x,int y){ //creating method that accept value and solve it
+        if(x+y<180){ //check if this triangle exist
+            System.out.println("Triangle exist"); //printing ""
+            if((180-(x+y))==90){System.out.println("This triangle is rectangular");} //check if this triangle rectangular
+            else { System.out.println("This triangle doesn't rectangular");} //case when triangle doesn't triangle
+        }
+        else{System.out.println("Triangle doesn't exist");} //case when triangle doesn't exist
+    }
+}
