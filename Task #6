@@ -1,0 +1,19 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Main obj=new Main(); //creating object which call function()
+        Scanner scanner=new Scanner(System.in); //creating scanner
+        int x=scanner.nextInt(); //creating variables
+        int y=scanner.nextInt(); //creating variables
+        obj.function(x,y); //calling the function()
+    }
+    public void function(int x,int y){ //creating method that accept value and solve it
+        if(y>=0 && y<=4 && x>=-2 && x<=2){ System.out.println("true");} //first case
+        else if(y<=0 && y>=-3 && x>=-4 && x<=4){ System.out.println("true");} //second case
+        else { System.out.println("false");} //third case
+    }
+}
